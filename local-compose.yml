@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  apache:
+    image: 'localhost:5000/apache:$TD'
+    labels:
+      kompose.service.type: nodeport
+    ports:
+      - '80:80'
+      - '443:443'
